@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Site Inspection Cheat Sheet</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-  <body background="bg.jpg">
-
-    <div></div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div><textarea rows="20" cols="40" id="textbox">
-      </textarea></div>
+<body>
+	<center><h2>Site Inspection Cheat Sheet</h2></center>
+	<br><br><br>
+	<div id="parent">
+		<div id="questions">
+			<div id="questions-content">
+				<p>Is AWS in place?<br>
+					<input type="radio" name="yes" value="yes">yes<br>
+					<input type="radio" name="no" value="no">no<br>
+				</p> 
+				
+				<p>Speed limit?<br>
+					<input type="text" name="speed"><br>
+				</p>
+				
+				<p>Client needed which lane? Lane# <input type="text" name="lanenumber"><br>
+					<input type="radio" name="northbound" value="northbound">Northbound<br>
+					<input type="radio" name="eastbound" value="eastbound">Eastbound<br>
+					<input type="radio" name="southbound" value="southbound">Southbound<br>
+					<input type="radio" name="westbound" value="westbound">Westbound<br>
+				</p>
+			</div>
+		</div>
+		
+		<div id="generated">
+			<p>Generated Text:</p><br>
+			<textarea cols="50" rows="15" id="textbox"></textarea>
+		</div>
+	</div>
 </body>
 </html>
